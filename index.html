@@ -2,17 +2,66 @@
     <html>
         <head>
             <style>
-                img {
-                        margin: auto;
-                        padding: auto;
-                        text-align: auto;
-                        text-align: -webkit-center;
+                header ul {
+                    float: right;
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;  
+                }
+
+                li {
+                    float: left;
+                    padding: 6px;
+                    margin: 6px;
+                    display: list-item;
+                    text-align: -webkit-match-parent;
+                }
+
+                main {
+                    grid-area: main;
+                    margin: auto;
+                    text-align: center;
+                }
+
+                #search_bar {
+                    display: flex;
+                    flex: 100%;
+                    width: 548px;
+                    height: 44px;
+                    border: 1px solid #dfe1e5;
+                    border-radius: 24px;
+                    padding-left: 35px;                
+                }
+
+                .submit_button {
+                    height: 36px;
+                    line-height: 27px;
+                    background-image: linear-gradient(#f5f5f5, #f1f1f1);
+                    background-color: #f2f2f2;
+                    border: 1px solid #f2f2f2;
+                    color: #576368;
+                    border-radius: 4px;
+                    font-size: 14px;
+                    margin: 11px 4px;
+                    min-width: 54px;
+                    padding: 0 16px;                
                 }
             </style>
             <link rel="stylesheet" type="text/css" href="styles.css">
         </head>
         <main>
+            <header>
+                <ul>
+                    <li>Gmail</li>
+                    <li>Images</li>
+                </ul>
+            </header>
             <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-
+            <form>
+                <input id="search_bar" type="text">
+                <input class="submit_button" type="submit" value="Google Search">
+                <input class="submit_button" type="submit" value="I'm feeling lucky">
+            </form>
         </main>
     </html>
